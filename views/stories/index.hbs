@@ -1,0 +1,9 @@
+<h1>Stories</h1>
+<div class="row">
+  {{#each stories as |currentStory|}}
+  {{> _story_card story=currentStory loggedInUser=../user}}
+
+  {{else}}
+  <p>No stories to display</p>
+  {{/each}}
+</div>

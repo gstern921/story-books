@@ -1,0 +1,33 @@
+p {
+  margin: 10px 0 !important;
+}
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+i.fa-small {
+  font-size: 1.3rem;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+.img-small {
+  width: 180px;
+}
+
+.more-stories-link {
+  margin-right: 0 !important;
+}
+
+.card .card-content p {
+  word-break: break-word;
+}
+
+.story-card {
+  min-height: 300px;
+}

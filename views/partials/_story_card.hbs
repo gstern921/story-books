@@ -1,0 +1,27 @@
+<div class="col s12 m4">
+  <div class="card">
+    <div class="card-content center-align">
+      {{#if (isStoryByUser story loggedInUser)}}
+      <div class="card-image">
+        <a
+          href="/stories/edit/{{ story._id }}"
+          class="btn-floating halfay-fab blue"
+          ><i class="fas fa-edit fa-small"></i
+        ></a>
+      </div>
+      {{/if}}
+      <h5>{{ story.title }}</h5>
+      <p>{{ truncate (stripTags story.body) 150 ... }}</p>
+      <br />
+      <div class="chip">
+        <img src="{{ story.user.image }}" alt="" />
+        <a href="/stories/user/{{ story.user.id }}">{{
+          story.user.displayName
+        }}</a>
+      </div>
+      <div class="card-action center-align">
+        <a href="/stories/{{ story._id }}" class="btn grey">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
