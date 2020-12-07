@@ -24,10 +24,21 @@ i.fa-small {
   margin-right: 0 !important;
 }
 
-.card .card-content p {
+.card .card-content {
   word-break: break-word;
 }
 
-.story-card {
-  min-height: 300px;
+.card .card-content p {
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.story {
+}
+
+.story-container {
+  word-break: break-word;
+}
+
+.dashboard {
 }
