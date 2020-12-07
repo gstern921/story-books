@@ -34,6 +34,8 @@ connectDB();
 
 const app = express();
 
+app.set("trust proxy", 1);
+
 // Body Parser
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
